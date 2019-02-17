@@ -3,19 +3,55 @@ JavaScript MA03
 Level 2
 
 1. In your own words, describe what JavaScript Code Style is.
+In my own words, I would say that Javascrip Code Style is a coding convention that helps developers write code in a readable matter that everyone can understand,
+not only other devs but also the developer himself. Writing code in a readable manner is very important especially if you work on a team with others.
+
+w3shools says the following;
+
+Coding conventions are style guidelines for programming. They typically cover:
+
+Naming and declaration rules for variables and functions.
+Rules for the use of white space, indentation, and comments.
+Programming practices and principles
+Coding conventions secure quality:
+
+Improves code readability
+Make code maintenance easier
+
+And I really agree with those statements.
 
 2. What is a Regular Expression?
+Regular Expressions is a sequence or "language" that can be utilized or used to define search patterns in strings to chekc for specific characters or patterns in text,
+this is useful when you want to find, replace and/ or validate a string such as in an email form.
 
 3. What does the .random() method do?
+I have to admit this is hard to answer as it depends on the context, however I'm going to assume we are talking about math.random(),
+which will generate a random set of numbers.
 
 4. What does the .sort() method do?
+This method will sort an array alphabetically.
 
 5. What does the .reverse() method do?
+This method will reverse the order of an array.
 
 6. List two examples of bad JavaScript code.
 
+
 7. What data types can a JSON object contain?
 
+In JSON, values must be one of the following data types:
+a string.
+a number.
+an object (JSON object)
+an array.
+a boolean.
+null.
+(w3schools)
+
 8. What is minifying JavaScript Code?
+Minifying JavaScript Code or Source code in general is the proccess where you remove all unnecessary characters without
+changing it's functionality.
 
 9. What is a global variable?
+A global variable is a variable that can be accessed throughout the entire document or script.
+It's a variable declared outisde of a local scope, and is generally considered bad practice.
