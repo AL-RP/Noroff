@@ -1,0 +1,30 @@
+var color = "Orange";
+
+if (color == "Orange") {
+console.log("It's orange!")
+} else {
+console.log("It's not orange!")
+}
+
+var a = parseInt(prompt("enter a month number please."), 10);
+var month = [
+"January", "February", "March", "April", "May", "June",
+"July", "August", "September", "October", "November", "December"
+];
+var b = month[a - 1];
+var season;
+switch (a) {
+case 12:
+case 1:
+case 2: season = "winter"; break;
+case 3:
+case 4:
+case 5: season = "spring"; break;
+case 6:
+case 7:
+case 8: season = "summer"; break;
+case 9:
+case 10:
+case 11: season = "fall"; break;
+}
+document.write(" It is " + b + ", which is in " + season + ".");

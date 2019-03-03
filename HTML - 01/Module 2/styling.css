@@ -1,0 +1,120 @@
+@font-face{
+   font-family: 'CormorantItalic';
+   src: url(fonts/CormorantGaramond-Italic.ttf);
+}
+
+body {
+  background-color: #F8F8F8;
+  background-image: url(images/background.jpg);
+  background-repeat: no-repeat, repeat;
+  background-size: 3000px auto;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+main {
+  margin-top: 50px;
+}
+
+.style {
+  background-color: rgba(232, 232, 232, 0.9);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+footer {
+  text-align: center;
+}
+
+article {
+  font-size: 14px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+}
+
+p {
+  font-family: 'Yrsa', serif;
+  font-size: 16px;
+}
+
+#copyright {
+  font-family: 'CormorantItalic', Italic;
+}
+
+#ancient h1 {
+  font-family: 'Anton', sans-serif;
+  color: rgba(232, 232, 232, 0.9);
+  background-color: black;
+  padding: 5px;
+}
+
+#europe p {
+  font-family: 'EB Garamond', serif;
+}
+
+#veryfirst::first-letter {
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+blockquote {
+  font-size: 24px;
+}
+
+#quotation {
+  font-size: 60px;
+}
+
+/* I made this class, just to demonstrate that i in-fact, do know how to use classes. Allthough, i prefer to use id's unless i'm styling multiple elements with the same styles as displayed on the footer and main css part at the top.*/
+img.roundedimages {
+  border-radius: 15px;
+  padding: 10px;
+}
+
+img {
+  border-radius: 15px 50px;
+  padding: 10px;
+}
+
+/* I made a menu as well, but since the assignment is not actually about this, and we weren't supposed to make it responsive, i left this out. If you wish you may enable the menu, but keep in mind that i did not make it responsive, as this was not the assignment.*/
+/* .menu {
+    width: auto;
+    position: fixed;
+    z-index: 1;
+    top: 25%;
+    left: 5%;
+    background: #F8F8F8;
+    overflow-x: hidden;
+    padding: 8px 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu a:hover {
+    color: #064579;
+}
+
+.menu a:active {
+    color: red;
+    font-size: 36px;
+}
+*/

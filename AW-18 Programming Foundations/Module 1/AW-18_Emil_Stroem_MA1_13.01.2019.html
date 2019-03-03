@@ -1,0 +1,74 @@
+<doctype html>
+<head>
+</head>
+<body>
+  <header>
+    <h1>Programming Foundations Module Assignment 1</h1>
+    <h2>Quick explenation</h2>
+    <p>I decided to do assignment 5-9 in one single script.</p>
+    <p>I hope this is an acceptable way to submit the assignment</p>
+    <P>I wanted to challenge myself by seing if I could make the script select a random value from my array, but also display the possibilities like requested in the assignment.</p>
+  </header>
+
+    <script>
+    var countries = ["Norway", "Sweeden", "Denmark", "Iceland", "Finland"];
+
+    var country = countries[Math.floor(Math.random()*countries.length)];
+
+    for(var i = 0; i<countries.length; i++) {
+      console.log("The possible countries are as follows: "+ countries[i]+".");
+    }
+
+    if (country == "Norway") {
+      console.log("The random country is Norway, Norway has a population of: POPULATION HERE")
+      document.write("The random country is Norway, inspect element to see how.")
+    }
+
+    else if (country == "Sweeden") {
+      console.log("The random country is Sweeden, Sweeden has a population of: POPULATION HERE")
+      document.write("The random country is Sweeden, inspect element to see how.")
+    }
+
+    else if (country == "Denmark") {
+      console.log("The random country is Denmark, Denmark has a population of: POPULATION HERE")
+      document.write("The random country is Denmark, inspect element to see how.")
+    }
+
+    else if (country == "Iceland") {
+      console.log("The random country is Iceland, Iceland has a population of: POPULATION HERE")
+      document.write("The random country is Iceland, inspect element to see how.")
+    }
+
+    else if (country == "Finland") {
+      console.log("The random country is Finland, Finland has a population of: POPULATION HERE")
+      document.write("The random country is Finland, inspect element to see how.")
+    }
+
+    else {
+      console.log("This message will never be displayed, because the array doesn not have another value!")
+    }
+
+    var John = {
+      Name:"John",
+      Age:"21",
+      Height:"178"
+    }
+
+    console.log(John)
+
+    class Hero {
+      constructor(Name, LightYears, Energy, Muscle, Powers) {
+        this.name = Name;
+        this.age = LightYears;
+        this.height = Energy;
+        this.strength = Muscle;
+        this.abilities = Powers;
+      }
+    }
+    </script>
+
+  <footer>
+    <p>Made by Emil Stroem</p>
+  </footer>
+</body>
+</html>

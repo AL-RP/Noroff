@@ -1,0 +1,481 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <!-- META TAGS -->
+  <meta charset="utf-8"/>
+  <meta name="description" content="Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.">
+  <meta name="keywords" content="science, interactive museum, museum, interactive, bergen, biology, kids, teachers, researchers, museum for kids, interactive for kids, parents, explore together, explore, cosmology, cosmology museum, evolution, evolution museum, biology, biology and medecine, biology museum, medecine museum, robotics, robotics and ai, ai, robotics museum, technical museum, technical, ecology, ecology museum, space, space museum, interactive space, museum workshop, technical workshop, bergen scs, scs bergen"/>
+  <meta name="author" content="Emil Stroem"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+
+  <!-- CSS STYLESHEETS -->
+  <link rel="stylesheet" href="styling/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Nunito|Rubik" rel="stylesheet"/>
+
+  <!-- Other variables or declerators -->
+  <title> Bergen Science Museum </title>
+
+  <!-- Fav Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+  <!-- Javascript scripts -->
+  <script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+  <!-- Jquery first, then popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body data-spy="scroll" data-target="#list" data-offset="25" class="scrollspy">
+  <header>
+    <div class="headerimage" id="top">
+      <img src="images/header.jpg" alt="Header image, picture of a man in a spacesuit inside a simulated shuttle">
+      <div class="centered"><h1 class="animated rubberBand">Explore together</h1></div>
+      <div class="centered-below"><p>Come <a href="visit.html">Join us</a> at the Community Science Museum where we’re committed to making science accessible to all.</p></div>
+    </div>
+
+    <!-- Navigational menu -->
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand ignore" href="#">
+        <img src="images/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo, atom like shape."/>
+        Bergen SCS
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item home active">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item animatednav see_and_do">
+            <a class="nav-link" href="see_and_do.html">See and do</a>
+          </li>
+          <li class="nav-item animatednav visit">
+            <a class="nav-link" href="visit.html">Visit</a>
+          </li>
+          <li class="nav-item animatednav involve">
+            <a class="nav-link" href="involve.html">Get involved</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <a class="nav-link ignore" href="#email"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal">
+            <em class="fa fa-envelope" aria-hidden="true"></em>
+          </button></a>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <!-- News cards -->
+  <div class="cards gradientbg">
+    <div class="container">
+      <div class="row"> <!-- Grid row-->
+
+        <div class="col-md-4 d-flex"> <!-- Grid column -->
+          <div class="card marged">
+            <div class="card-body">
+              <span class="badge badge-secondary">New</span>
+              <h2>Visiting Professor of Aeronautics</h2>
+              <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 d-flex"> <!-- Grid column -->
+          <div class="card">
+            <div class="card-body">
+              <span class="badge badge-secondary">New</span>
+              <h2>Night in the Museum</h2>
+              <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 d-flex"> <!-- Grid column -->
+          <div class="card">
+            <div class="card-body">
+              <h2>Energetica Exhibition on Loan</h2>
+              <p>On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum. It’s a series of installations that allow visitors to experience the power of the elements as we harness them. From solar energy powering lighting, to ‘Wind Island’ that shows how turbines are able to use and control wind to create power.</p>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- Grid row-->
+    </div>
+  </div>
+
+  <!-- Section Devider -->
+  <div class="dark">
+    <div class="sectiondiv revealOnScroll" data-animation="fadeInRightBig"><h1>Exhibition Spaces</h1></div>
+
+    <!-- Articles -->
+    <div class="revealOnScroll" id="exhibition" data-animation="fadeInRightBig">
+      <article class="animatedunderline">
+        <h2>Cosmology</h2>
+        <p>Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope, to the latest exploration of the planets in our solar system.</p>
+        <a href="see_and_do.html#list-item-1">Click here to learn more</a>
+      </article>
+      <article class="animatedunderline">
+        <h2>Evolution</h2>
+        <p>Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope, to the latest exploration of the planets in our solar system.</p>
+        <a href="see_and_do.html#list-item-2">Click here to learn more</a>
+      </article>
+      <article class="animatedunderline">
+        <h2>Biology and Medicine</h2>
+        <p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world. </p>
+        <a href="see_and_do.html#list-item-3">Click here to learn more</a>
+      </article>
+      <article class="animatedunderline">
+        <h2>Robotics and AI</h2>
+        <p>The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. You can even say hello and shake the hand of Rob the Robot.</p>
+        <a href="see_and_do.html#list-item-4">Click here to learn more</a>
+      </article>
+      <article class="animatedunderline">
+        <h2>Cosmology</h2>
+        <p>Discover the origins of life on this planet and how the species we know today have evolved our time. You can also take some time to meet a few of the creatures who didn’t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.</p>
+        <a href="see_and_do.html#list-item-5">Click here to learn more</a>
+      </article>
+    </div>
+  </div>
+
+  <!-- Section Devider -->
+  <div class="sectiondiv revealOnScroll" data-animation="fadeInLeftBig"><h1>Explore</h1></div>
+
+  <!-- Articles -->
+  <div id="delay" class="revealOnScroll" data-animation="fadeInLeftBig">
+    <div class="container d-flex">
+      <div class="row" id="explore">
+        <div class="card-container col-md-4">
+          <div class="card-flip rotatecards">
+            <div class="front card">
+              <!-- Card Contents Here -->
+              <img class="card-img-top" src="images/ant.jpg" alt="Image of a huge ant replica">
+              <div class="card-body">
+                <h5 class="card-title">For kids</h5>
+                <p class="card-text">Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Hover for more information!</small>
+              </div>
+              <!-- Card Contents Here -->
+            </div>
+            <div class="back card">
+              <!-- Card Contents Here -->
+              <img class="card-img-top" src="images/ant.jpg" alt="Image of a huge ant replica">
+              <div class="card-body">
+                <h5 class="card-title">For kids</h5>
+                <p class="card-text">
+                  You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.
+                </p>
+              </div>
+              <!-- Card Contents Here -->
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container col-md-4">
+          <div class="card-flip rotatecards">
+            <div class="front card">
+              <!-- Card Contents Here -->
+              <img class="card-img-top" src="images/learn.jpg" alt="Image of a little girl looking baffled at equations.">
+              <div class="card-body">
+                <h5 class="card-title">For teachers</h5>
+                <p class="card-text">As a community-driven museum, we want to work with schools to create places of learning and exploring.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Hover for more information!</small>
+              </div>
+              <!-- Card Contents Here -->
+            </div>
+            <div class="back card">
+              <!-- Card Contents Here -->
+              <img class="card-img-top" src="images/learn.jpg" alt="Image of a little girl looking baffled at equations.">
+              <div class="card-body">
+                <h5 class="card-title">For teachers</h5>
+                <p class="card-text">Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them.</p>
+                <p class="card-text"> Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit. </p>
+              </div>
+              <!-- Card Contents Here -->
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container col-md-4">
+          <div class="card-flip rotatecards">
+            <div class="front card">
+              <!-- Card Contents Here -->
+              <img class="card-img-top" src="images/robotics.jpg" alt="Image of a girl working on a huge robotic machine.">
+              <div class="card-body">
+                <h5 class="card-title">Researchers</h5>
+                <p class="card-text">Are you looking to get involved with our team of researchers and academics? </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Hover for more information!</small>
+              </div>
+              <!-- Card Contents Here -->
+            </div>
+            <div class="back card">
+              <!-- Card Contents Here -->
+              <img class="card-img-top" src="images/robotics.jpg" alt="Image of a girl working on a huge robotic machine.">
+              <div class="card-body">
+                <h5 class="card-title">Researchers</h5>
+                <p class="card-text">Our museum offers various ways for you to use our resources and contribute towards them.</p>
+                <p class="card-text">We have online records, laboratory space, and a working relationship with a number of universities around the country. </p>
+              </div>
+              <!-- Card Contents Here -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Section Devider -->
+  <div class="sectiondiv revealOnScroll" data-animation="fadeInRightBig"><h1>Social media posts</h1></div>
+
+  <!-- Social -->
+  <div id="delay" class="container revealOnScroll" data-animation="fadeInRightBig">
+    <div class="row social"> <!-- Grid row-->
+
+      <div class="col-md-4 d-flex"> <!-- Grid column -->
+        <div class="card">
+          <img class="card-img-top" src="images/social1.jpg" alt="Image of a child using VR or augmented reality goggles.">
+          <div class="card-body">
+            <p class="card-text">We just upgraded our VR equipment, and now you can explore the museum, universe and much more in VR.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex"> <!-- Grid column -->
+        <div class="card">
+          <img class="card-img-top" src="images/social2.jpg" alt="Image of the museums center hall, tall and rounded roofs, and tiled floors, with a huge Mammoth on display.">
+          <div class="card-body">
+            <p class="card-text">The center hall of the museum is so beautiful. Imagine sleeping here!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex"> <!-- Grid column -->
+        <div class="card">
+          <img class="card-img-top" src="images/social3.jpg" alt="Image of one of the display halls in the museum.">
+          <div class="card-body">
+            <p class="card-text">Last weekend was a blast! Full house, don't miss this weeks event at 19:00PM</p>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- Grid row-->
+  </div>
+
+
+  <!-- other content -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Contact information</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5>Adress:</h5>
+          <p>Thor Gate 51, 5006 Bergen</p>
+          <h5>Email-Adress:</h5>
+          <p>info@bergenscs.com</p>
+          <h5>Phone:</h5>
+          <p>+47 55 42 34 35</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Ok!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <script>
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("nav");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+</script>
+
+<script>
+$(function() {
+
+  var $window           = $(window),
+  win_height_padded = $window.height() * 1.1,
+  isTouch           = Modernizr.touch;
+
+  if (isTouch) { $('.revealOnScroll').addClass('animated'); }
+
+  $window.on('scroll', revealOnScroll);
+
+  function revealOnScroll() {
+    var scrolled = $window.scrollTop(),
+    win_height_padded = $window.height() * 1.1;
+
+    // Showed...
+    $(".revealOnScroll:not(.animated)").each(function () {
+      var $this     = $(this),
+      offsetTop = $this.offset().top;
+
+      if (scrolled + win_height_padded > offsetTop) {
+        if ($this.data('timeout')) {
+          window.setTimeout(function(){
+            $this.addClass('animated ' + $this.data('animation'));
+          }, parseInt($this.data('timeout'),10));
+        } else {
+          $this.addClass('animated ' + $this.data('animation'));
+        }
+      }
+    });
+    // Hidden...
+    $(".revealOnScroll.animated").each(function (index) {
+      var $this     = $(this),
+      offsetTop = $this.offset().top;
+      if (scrolled + win_height_padded < offsetTop) {
+        $(this).removeClass('animated fadeInUp flipInX lightSpeedIn')
+      }
+    });
+  }
+
+  revealOnScroll();
+});
+</script>
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small blue-grey lighten-5">
+
+  <div class="footerbg">
+    <div class="container">
+
+      <div class="row py-4 d-flex align-items-center"> <!-- Grid row-->
+
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0"> <!-- Grid column -->
+          <h6 class="mb-0">Get connected with us on social networks!</h6>
+        </div> <!-- Grid column -->
+
+        <div class="col-md-6 col-lg-7 text-center text-md-right footersocialicons"> <!-- Grid column -->
+
+          <!-- Facebook -->
+          <a href="#" class="fb-ic">
+            <em class="fa fa-facebook white-text mr-4"> </em>
+          </a>
+          <!-- Twitter -->
+          <a href="#" class="tw-ic">
+            <em class="fa fa-twitter white-text mr-4"> </em>
+          </a>
+          <!--Instagram-->
+          <a href="#" class="ins-ic">
+            <em class="fa fa-instagram white-text"> </em>
+          </a>
+
+        </div> <!-- Grid column -->
+
+      </div> <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <div class="row mt-3 dark-grey-text"> <!-- Grid row -->
+
+      <div class="col-md-3 col-lg-4 col-xl-3 mb-4"> <!-- Grid column -->
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Bergen SCS</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.</p>
+
+      </div> <!-- Grid column -->
+
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4"> <!-- Grid column -->
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text" href="#top">Back to top</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="visit.html">Visit</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="involve.html">Get involved</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="see_and_do.html">See and do</a>
+        </p>
+
+      </div> <!-- Grid column -->
+
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"> <!-- Grid column -->
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <em class="fa fa-home mr-3"></em> Thor Gate 51, 5006 Bergen</p>
+          <p>
+            <em class="fa fa-envelope mr-3"></em> info@bergenscs.com</p>
+            <p>
+              <em class="fa fa-phone mr-3"></em> +47 55 42 34 35</p>
+
+            </div> <!-- Grid column -->
+
+          </div> <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+          <a href="http://emilstrom.no/"> Emil Stroem</a>
+        </div>
+        <!-- Copyright -->
+
+      </footer>
+      <!-- Footer -->
+    </body>
+    </html>
